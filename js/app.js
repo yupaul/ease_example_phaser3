@@ -27,7 +27,7 @@ var game = new Phaser.Game(config);
 
 function drawFunction(func, params) 
 {   
-    if(!/^[a-zA-Z]+(?:\.[a-zA-z]+)?$/.test(func)) {
+    if(!/^[a-zA-Z]+(?:\.[a-zA-Z]+)?$/.test(func)) {
         var _ease = new Function('v', func);
         try {
             var _r = _ease(0.5);
